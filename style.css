@@ -1,0 +1,316 @@
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ html{
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+   background: #eee;
+ }
+ 
+ li{
+   list-style: none;
+  
+ }
+
+ a{
+   color: #333;
+   text-decoration: none;
+ }
+
+img{
+  width: 100%;
+}
+
+
+
+
+ /*      Main Styling      */
+ 
+/* Nav Bar */
+
+#main-nav{
+  background: rgb(248, 248, 248);
+  margin: auto;
+  padding: 1rem;
+  width: 100%; 
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10
+  ;
+
+}
+#main-nav .nav-container{
+  display: grid;
+  grid-template-columns:6fr 2fr 2fr;
+  align-items: center;
+  padding: 0 6rem;
+
+ }
+.social-logo a{
+  color: #444;
+  padding: 0.1rem;
+}
+.logo{
+  width: 200px;
+}
+
+.nav-btn a{
+  padding: 0.8rem;
+}
+
+.nav-btn .btn3{
+  color: white;
+  background: #c72727;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+/* LANDING */
+
+.landing{
+  max-width: 100%;
+  height: fit-content;
+  z-index: 2;
+  background: url(img/featured.jpg) no-repeat center center/cover ;
+  position: relative;
+  
+
+}
+
+.landing::before{
+  content: "";
+  background: rgba(46, 46, 46, 0.61);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container-landing{
+  padding: 6rem;
+  margin: 0 5rem;
+  width: 60%;
+}
+
+.landing span{
+  font-size: 12px;
+  background: orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  
+}
+.landing h2{
+  font-size: 25px;
+  color: white;
+  margin: 1rem auto;
+}
+.landing p{
+  color: white;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+}
+.landing a{
+  
+  padding: 0.9rem;
+  background: rgb(214, 66, 66);
+  color: white;
+  border-radius: 3px;
+}
+
+/*   Articles */
+
+.main-article-container{
+  margin: 4rem 8rem;
+  padding: 1rem;
+  background: rgb(235, 235, 235);
+  text-align: start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main-article-container h2{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.main-article-container .article-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: 
+  "a1 a1 a2"
+  "a3 a4 a5"
+  "a6 a7 a7";
+  padding: 1rem;
+}
+.main-article-container .article-grid .article{
+  background: white;
+  padding: 1rem;
+}
+
+
+.main-article-container span{
+  font-size: 12px;
+  background: orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  
+}
+
+.main-article-container h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.main-article-container p{
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding: 0.4rem 0;
+}
+/* GIVING ARTICVLES GRID AREA MANE */ 
+.article1{
+  grid-area: a1;
+}
+.article2{
+  grid-area: a2;
+  color: white;
+  background: #2e2e2e !important; 
+}
+.article3{
+  grid-area: a3;
+}
+.article4{
+  grid-area: a4;
+}
+.article5{
+  grid-area: a5;
+}
+.article6{
+  grid-area: a6;
+  color: white;
+  background: #ad2222 !important; 
+}
+.article7{
+  grid-area: a7;
+}
+
+/* Making grid with in grids */
+.article1, .article7{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  
+}
+
+
+/* Footer  */
+footer{
+  background: #333;
+  height: fit-content;
+  padding: 2rem 5rem;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5rem;
+  color: white;
+
+}
+
+
+.ftr{
+  padding: 1rem;
+ 
+
+}
+
+.company img{
+  width: 200px;
+  padding: 0.8rem 0;
+}
+
+.footer-grid h3{
+  font-size: 1.3rem;
+  margin: 0.8rem 0;
+}
+
+.footer-grid p{
+  font-size: 0.9rem;
+  padding: 0.8rem 0;
+}
+
+.footer-grid .form input{
+  padding: 0.8rem;
+  width: 100%;
+}
+
+
+.footer-grid .btn1{
+  margin: 0.8rem 0;
+  padding: 0.7rem;
+  width: 100%;
+  color: white;
+  background: #c72727;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer-grid .btn2{
+  margin: 0.8rem 0;
+  padding: 0.7rem;
+  width: 100%;
+  color: white;
+  background: #d69027;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+
+}
+
+.footer-grid .links ul li{
+  padding: 0.4rem;
+  margin: 0.5rem 0;
+  border-bottom: #444 solid 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  background: #444;
+  color: white;
+  font-size: 0.8rem;
+}
